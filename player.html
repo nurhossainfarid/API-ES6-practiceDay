@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Your Favorite Player</title>
+    <!-- bootstrap sheet add -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- style -->
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- header part start -->
+    <header>
+        <h1 class="text-center">Search Your favorite player</h1>
+    </header>
+    <!-- header part end -->
+
+    <!-- main part start -->
+    <main id="display-player" class="row w-75 mx-auto">
+        <div class="col-6">
+            <h2 class="text-center">Left sight</h2>
+            <!-- search section start -->
+            <div class="input-group mb-3 w-50 mx-auto">
+                <input type="text" id="search-box" class="form-control" placeholder="Recipient's username"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary" type="button" id="button-addon2"
+                    onclick="loadPlayerInfo()">Button</button>
+            </div>
+            <!-- search section end -->
+
+            <!-- player info start -->
+            <div id="parents-div" class="row">
+            </div>
+            <!-- player info end -->
+        </div>
+        <div class="col-6">
+            <h2 class="text-center">Right sight</h2>
+        </div>
+    </main>
+    <!-- main part end -->
+
+    <!-- bootstrap script sheet add -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <!-- add script sheet -->
+    <script src="player.js"></script>
+</body>
+
+</html>
